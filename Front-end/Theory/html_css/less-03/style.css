@@ -1,0 +1,80 @@
+.box{
+    width: 50px;
+    height: 50px;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1{
+    background-color: blueviolet;
+    padding: 10px 8px 5px 3px;
+}
+
+.box2{
+    background-color: brown;
+    border: solid 2px #333;
+}
+/*
+    * Nếu muốn 1 phía có viền, các viền còn lại k có,thì sd các tt của border tương ứng với vị trí 
+
+                            border-top-width: 10px
+                            border-right-width: 0px
+                            border-bottom-width: 0px
+                            border-left-width: 0px
+*/
+
+.box3{
+    background-color: burlywood;
+    margin: auto auto;
+}
+
+.box4{
+    background-color: chartreuse;
+    padding: 5px;
+    box-sizing: border-box;
+    border: solid 1px;
+}
+/* box-sizing: border-box cho phép tính toán kích thước của khối bao gồm cả padding và border mà k làm thay đổi kích thước ban đầu đã khai báo. Tuy nhiên, padding và border phải nhỏ hơn giới hạn cho phép thì tt mới có tác dụng.*/
+
+.header {
+    width: 300px;
+    height: 300px;
+    background-image: url(https://i.pinimg.com/564x/a6/3b/8c/a63b8c45a722c357268688782333ddd4.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+body{
+    height: 200vh;;
+}
+
+.pos {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: relative;
+}
+
+/* di chuyen dtg con xung quanh dtg cha */
+.pos2{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+
+/* dtg phu thuoc vao dtg : absolute
+    dtg phu thuoc vap trang web: fixed
+*/
+
+.pos-parent{
+    width: 100%;
+    height: 10px;
+    background-color: black;
+    position: fixed;
+    z-index: 1;
+}
