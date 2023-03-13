@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS</title>
+    <style>
+        h5 {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- .class -->
+    <h1 class="header">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio inventore atque asperiores.</h1>
+
+    <!-- .class1.class2 - Select both class1 and class2-->
+    <div class="header body1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio inventore atque asperiores.</div>
+
+    <!-- .class1 .class2 - Select all elements with class2  that is a descendant(hau due) with class1 -->
+    <div class="header">
+        <p class="child">This is child tag</p>
+    </div>
+
+    <!-- #id : only one name -->
+    <p id="body2">ABC</p>
+    
+    <!-- element.class1 - Select all elements with class1 -->
+    <h2 class="body3">Xin chào, ông bạn ngay dưới cùng class với tôi nhưng cách selector khác nhau nên không cùng kiểu</h2>
+    <div class="body3">Xin chào, ông bạn ngay trên cùng class với tôi nhưng cách selector khác nhau nên không cùng kiểu</div>
+
+    <!-- element, element -->
+    <h3>Hãy tiếp tục sức mạnh và tài năng của mình để gặt hái thành công.</h3>
+    <h4>Hãy giữ niềm tin vào bản thân và khả năng của mình, và tôi tin rằng bạn sẽ phát triển và làm ăn tốt hơn mỗi ngày.</h4>
+
+    <!-- element + element - Anh em liền kề nhau -->
+    <div class="parent">
+        Tôi là cha của dòng dưới
+        <div class="child">
+            Tôi là con của dòng đầu tiên
+            <div class="grandchildren">Tôi là cháu của dòng đầu tiên</div>
+        </div>
+        <div class="child">jhfjvj</div>
+    </div>
+
+    <!-- Độ ưu tiên trong css -->
+    <div class="priority">
+        <h5 style="color:brown;">Priority - Độ ưu tiên</h5>
+        <ol>
+            <li class="">Internal, External: Sẽ ưu tiên ông mới trước, ông nào viết sau cùng là ông mới</li>
+            <li>Inline > id > class > tag</li>
+        </ol>
+    </div>
+
+    <!-- Element Pseudo -->
+    <div class="box">
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+/* reset page */
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+    color: red;
+    font-size: 1.2rem;
+}
+
+.header.body1:hover{
+    font-weight: 800;
+}
+
+.header .child{
+    color: brown;
+}
+
+#body2{
+    color: chartreuse;
+}
+
+h2.body3{
+    font-style: italic;
+}
+
+.body3::first-letter{
+    font-size: 30px;
+}
+
+h3, h4 {
+    font-size: 0.9rem;
+    font-family: monospace;
+    font-weight: 600;
+    font-style: italic;
+    color: darkslategray;
+}
+
+.child ~ .child {
+    color: aqua;
+}
+
+h5{
+    color: red;
+}
+
+:root{
+    --primary-color: chocolate;
+}
+
+ol li {
+    color: var(--primary-color);
+}
+
+.box{
+    display: block;
+    background-color: #000;
+    width: 100%;
+    height: 50px;
+}
+
+.box::before{
+    content: "Đây là phần tử giả 'before', khi dùng bắt buộc phải có thuộc tính content= chuỗi rỗng";
+    display: block;
+    height: 20px;
+    background-color: aqua;
+}
+
+.box::after{
+    content: "Đây là phần tử giả 'after', khi dùng bắt buộc phải có thuộc tính content= chuỗi rỗng";
+    display: block;
+    height: 20px;
+    background-color: aqua;
+}
+
